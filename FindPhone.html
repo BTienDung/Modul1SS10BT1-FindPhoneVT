@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        arrPhone = ['032', '033', '034','091', '094', '088','089', '090', '093'];
+        console.log(arrPhone);
+        arrPhoneVT = [];
+        function finePhoneVT(arr) {
+            regexp = /^[0]+[3][234]$/;
+            for (let i=0;i<arrPhone.length;i++){
+                if (regexp.test(arr[i])){
+                    arrPhoneVT.push(arr[i]);
+                }
+            }
+        }
+        finePhoneVT(arrPhone);
+        console.log('Danh sách các nhà mang Viettel là: ');
+        console.log(arrPhoneVT);
+    </script>
+</body>
+</html>
